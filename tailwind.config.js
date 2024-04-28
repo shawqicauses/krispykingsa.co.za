@@ -1,13 +1,15 @@
-// DONE REVIEWING: GITHUB COMMIT
+// DONE REVIEWING: GITHUB COMMIT 👏🏻
 /** @type {import('tailwindcss').Config} */
 const f = require("@tailwindcss/forms")
 const lc = require("@tailwindcss/line-clamp")
+const rt = require("@relume_io/relume-tailwind")
 
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./containers/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@relume_io/relume-ui/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     screens: {
@@ -88,5 +90,5 @@ module.exports = {
     columns: {},
     blur: {}
   },
-  plugins: [f, lc]
+  plugins: [f, lc, rt]
 }
