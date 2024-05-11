@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 5️⃣
+// DONE REVIEWING: GITHUB COMMIT 6️⃣
 /** @type {import('tailwindcss').Config} */
 const f = require("@tailwindcss/forms")
 const lc = require("@tailwindcss/line-clamp")
@@ -14,7 +14,7 @@ module.exports = {
   theme: {
     screens: {
       "xs": "30rem",
-      "sm": "10rem",
+      "sm": "40rem",
       "md": "48rem",
       "lg": "64rem",
       "xl": "80rem",
