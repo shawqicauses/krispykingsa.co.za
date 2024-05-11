@@ -1,6 +1,8 @@
-// DONE REVIEWING: GITHUB COMMIT 🥊
+// DONE REVIEWING: GITHUB COMMIT 5️⃣
+import {Header} from "../components"
+
 const IndexPage = function IndexPage() {
-  return <main>Krispy King Website</main>
+  return <Header />
 }
 
 export default IndexPage
