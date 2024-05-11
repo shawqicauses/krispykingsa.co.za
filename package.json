@@ -1,5 +1,5 @@
 {
-  "reviewed": "true 3️⃣",
+  "reviewed": "true 4️⃣",
   "version": "1.0.0",
   "name": "krispykingsa.co.za",
   "description": "Krispy King website built using TypeScript, Tailwind CSS, and Bootstrap",
@@ -15,6 +15,7 @@
   "dependencies": {
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
+    "@headlessui/react": "2.0.3",
     "@heroicons/react": "2.0.18",
     "@mui/material": "5.14.1",
     "@relume_io/relume-tailwind": "0.0.10",
