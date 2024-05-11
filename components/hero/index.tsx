@@ -1,7 +1,8 @@
-// DONE REVIEWING: GITHUB COMMIT 2️⃣
+// DONE REVIEWING: GITHUB COMMIT 3️⃣
 
 "use client"
 
+import {Bars3Icon} from "@heroicons/react/24/outline"
 import Link from "next/link"
 import {useState} from "react"
 
@@ -25,6 +26,35 @@ const Hero = function Hero() {
               href="/"
               className="text-neutral-950 -m-1.5 p-1.5 text-lg font-semi-bold uppercase leading-none tracking-widest">
               <span className="text-red-600">Krispy</span> King.
+            </Link>
+          </div>
+          <div className="flex lg:hidden">
+            <button
+              type="button"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-700"
+              onClick={() => setMobileMenuOpen(true)}>
+              <span className="sr-only">Open Main Menu</span>
+              <Bars3Icon aria-hidden="true" className="h-6 w-6" />
+            </button>
+          </div>
+          <div className="hidden lg:flex lg:gap-x-12">
+            {navigation.map((element) => (
+              <Link
+                key={element.href}
+                href={element.href}
+                className="text-neutral-950 text-sm font-medium leading-none transition-all duration-300 ease-in-out hover:text-red-600">
+                {element.name}
+              </Link>
+            ))}
+          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <Link
+              href="/order-now"
+              className="text-neutral-950 text-sm font-medium leading-none transition-all duration-300 ease-in-out hover:text-red-600">
+              Order Now
+              <span aria-hidden="true" className="ml-2">
+                &rarr;
+              </span>
             </Link>
           </div>
         </nav>
