@@ -1,4 +1,4 @@
-/* DONE REVIEWING: GITHUB COMMIT */
+/* DONE REVIEWING: GITHUB COMMIT 1️⃣ */
 /* IF: You do not want to use Tailwind */
 /* DELETE: Every @tailwind rule */
 
@@ -6,3 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+
+@layer utilities {
+  .cta-stop-color-1 {
+    stop-color: theme(colors.red.300);
+  }
+
+  .cta-stop-color-2 {
+    stop-color: theme(colors.yellow.300);
+  }
+}

@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 6️⃣
+// DONE REVIEWING: GITHUB COMMIT 1️⃣
 /** @type {import('tailwindcss').Config} */
 const f = require("@tailwindcss/forms")
 const lc = require("@tailwindcss/line-clamp")
@@ -81,10 +81,12 @@ module.exports = {
       "full": "100rem"
     },
     boxShadow: {
-      sm: "0 0.25rem 0.5rem 0 rgb(0 0 0 / 0.05)",
-      base: "0 0.25rem 0.75rem 0 rgb(0 0 0 / 0.05), 0 0.25rem 0.5rem -0.25rem rgb(0 0 0 / 0.05)",
-      md: "0 1rem 1.5rem -0.25rem rgb(0 0 0 / 0.05), 0 0.5rem 1rem -0.5rem rgb(0 0 0 / 0.05)",
-      lg: "0 2.4rem 3.75rem -0.75rem rgb(0 0 0 / 0.05), 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.05)"
+      "sm": "0 0.25rem 0.5rem 0 rgb(0 0 0 / 0.05)",
+      "": "0 0.25rem 0.75rem 0 rgb(0 0 0 / 0.1), 0 0.25rem 0.5rem -0.25rem rgb(0 0 0 / 0.1)",
+      "md": "0 1rem 1.5rem -0.25rem rgb(0 0 0 / 0.1), 0 0.5rem 1rem -0.5rem rgb(0 0 0 / 0.1)",
+      "lg": "0 2.4rem 3.75rem -0.75rem rgb(0 0 0 / 0.1), 0 0.75rem 1.5rem -1rem rgb(0 0 0 / 0.1)",
+      "xl": "0 1.25rem 1.5rem -0.25rem rgb(0 0 0 / 0.1), 0 0.5rem 0.625rem -0.375rem rgb(0 0 0 / 0.1)",
+      "xl-2": "0 1.25rem 3.125rem -0.75rem rgb(0 0 0 / 0.25)"
     },
     dropShadow: {},
     columns: {},
