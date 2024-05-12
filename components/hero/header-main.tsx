@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 6️⃣
+// DONE REVIEWING: GITHUB COMMIT 1️⃣
 import Image from "next/image"
 import Link from "next/link"
 
@@ -61,7 +61,7 @@ const Header = function Header() {
           <div className="mx-auto max-w-xl-7 px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
             <div className="mx-auto max-w-xl-2 gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-xl-2">
-                <h1 className="text-neutral-950 text-xl-4 font-bold leading-tight tracking-tight sm:text-xl-5 lg:text-xl-6">
+                <h1 className="text-xl-4 font-bold leading-tight tracking-tight text-neutral-950 sm:text-xl-5 lg:text-xl-6">
                   Delicious Food &{" "}
                   <span className="underline decoration-4 underline-offset-2">
                     Memorable
@@ -71,7 +71,7 @@ const Header = function Header() {
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-neutral-600 sm:max-w-md lg:max-w-none">
                   Indulge in our mouth-watering dishes and savor the flavors of{" "}
-                  <span className="text-neutral-950 font-semi-bold italic">
+                  <span className="font-semi-bold italic text-neutral-950">
                     Krispy King
                   </span>
                   . Whether you are craving our famous fried chicken or our
@@ -86,7 +86,7 @@ const Header = function Header() {
                   </Link>
                   <Link
                     href="/order-now"
-                    className="text-neutral-950 text-sm font-medium leading-6">
+                    className="text-sm font-medium leading-6 text-neutral-950">
                     Order Now <span aria-hidden="true">→</span>
                   </Link>
                 </div>

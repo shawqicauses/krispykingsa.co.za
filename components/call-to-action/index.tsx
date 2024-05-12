@@ -1,4 +1,7 @@
-// DONE REVIEWING: GITHUB COMMIT 2️⃣
+// DONE REVIEWING: GITHUB COMMIT 3️⃣
+import Image from "next/image"
+import Link from "next/link"
+
 const CTA = function CTA() {
   const id = "cta-background-pattern"
   return (
@@ -26,6 +29,37 @@ const CTA = function CTA() {
               </radialGradient>
             </defs>
           </svg>
+          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <h2 className="text-xl-3 font-bold leading-tight tracking-tight text-white sm:text-xl-4">
+              Discover Our Delicious Menu Now
+              <span className="text-yellow-500">.</span>
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-neutral-300">
+              Indulge in our mouth-watering dishes made with the finest
+              ingredients.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <Link
+                href="/menu"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-medium text-neutral-950 shadow-sm transition-all duration-300 ease-in-out hover:bg-neutral-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-white">
+                Our Menu
+              </Link>
+              <Link
+                href="/order-now"
+                className="text-sm font-medium leading-6 text-white">
+                Order Now <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </div>
+          <div className="relative mt-16 h-80 lg:mt-8">
+            <Image
+              src="https://images.unsplash.com/photo-1551489186-c892fa1428c9"
+              alt="Food Menu"
+              className="absolute left-0 top-0 w-[40rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              width={1824}
+              height={1080}
+            />
+          </div>
         </div>
       </div>
     </div>
