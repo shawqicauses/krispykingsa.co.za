@@ -1,4 +1,4 @@
-// DINE REVIEWING: GITHUB COMMIT 2️⃣
+// DINE REVIEWING: GITHUB COMMIT 3️⃣
 
 import {StarIcon} from "@heroicons/react/24/solid"
 import Image from "next/image"
@@ -27,7 +27,7 @@ const Menu = function Menu({menu}: MenuProps) {
           {menu.map((element) => (
             <div
               key={element.id}
-              className="group relative rounded-lg p-4 transition-all duration-300 ease-in-out odd:bg-yellow-50 even:bg-red-50 odd:hover:bg-yellow-500 even:hover:bg-red-600 sm:p-6">
+              className="group relative rounded-lg border p-4 transition-all duration-300 ease-in-out odd:border-yellow-100 odd:bg-yellow-50 even:border-red-100 even:bg-red-50 hover:border-transparent odd:hover:bg-yellow-500 even:hover:bg-red-600 sm:p-6">
               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-neutral-100 transition-all duration-300 ease-in-out group-hover:opacity-75">
                 <Image
                   src={element.image}
@@ -52,14 +52,14 @@ const Menu = function Menu({menu}: MenuProps) {
                         aria-hidden="true"
                         className={classNames(
                           element.rating > rating
-                            ? "text-yellow-500 group-hover:text-white"
-                            : "text-neutral-200 odd:group-hover:text-yellow-700 even:group-hover:text-red-700",
+                            ? "group-odd:text-yellow-600 group-even:text-red-600 group-hover:text-white"
+                            : "group-odd:text-yellow-200 group-even:text-red-200 group-odd:group-hover:text-yellow-700 group-even:group-hover:text-red-700",
                           "h-5 w-5 flex-shrink-0 transition-all duration-300 ease-in-out"
                         )}
                       />
                     ))}
                   </div>
-                  <p className="mt-1 text-sm transition-all duration-300 ease-in-out odd:text-yellow-700 even:text-red-700 group-hover:text-white">
+                  <p className="mt-1 text-sm transition-all duration-300 ease-in-out group-odd:text-yellow-800 group-even:text-red-800 group-hover:text-white">
                     {element.reviewCount} reviews
                   </p>
                 </div>

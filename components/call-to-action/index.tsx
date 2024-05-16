@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 3️⃣
+// DONE REVIEWING: GITHUB COMMIT 4️⃣
 import Image from "next/image"
 import Link from "next/link"
 
@@ -55,7 +55,7 @@ const CTA = function CTA() {
             <Image
               src="https://images.unsplash.com/photo-1551489186-c892fa1428c9"
               alt="Food Menu"
-              className="absolute left-0 top-0 w-[40rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              className="absolute left-0 top-0 w-[40rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10 grayscale"
               width={1824}
               height={1080}
             />

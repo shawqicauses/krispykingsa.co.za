@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 3️⃣
+// DONE REVIEWING: GITHUB COMMIT 4️⃣
 
 import {StarIcon} from "@heroicons/react/24/solid"
 import Image from "next/image"
@@ -23,11 +23,11 @@ const Testimonial = function Testimonial({testimonials}: TestimonialProps) {
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-xl-7 px-6 lg:px-8">
-        <div className="mx-auto grid max-w-xl-2 grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto grid max-w-xl-2 grid-cols-1 gap-4 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           {testimonials.map((element) => (
             <div
               key={element.id}
-              className="flex flex-col odd:pb-10 even:border-t even:border-neutral-950/10 even:pt-10 sm:odd:pb-16 sm:even:pt-16 lg:odd:pb-0 lg:odd:pr-8 lg:even:border-l lg:even:border-t-0 lg:even:pl-8 lg:even:pt-0 xl:odd:pr-20 xl:even:pl-20">
+              className="group flex flex-col rounded-lg border p-6 odd:border-yellow-100 odd:bg-yellow-50 even:border-red-100 even:bg-red-50 sm:p-8">
               <div className="flex">
                 {[0, 1, 2, 3, 4].map((rating) => (
                   <StarIcon
@@ -35,8 +35,8 @@ const Testimonial = function Testimonial({testimonials}: TestimonialProps) {
                     aria-hidden="true"
                     className={classNames(
                       element.rating > rating
-                        ? "text-yellow-500"
-                        : "text-neutral-200",
+                        ? "group-odd:text-yellow-600 group-even:text-red-600"
+                        : "group-odd:text-yellow-200 group-even:text-red-200",
                       "h-5 w-5 flex-shrink-0"
                     )}
                   />
@@ -51,13 +51,13 @@ const Testimonial = function Testimonial({testimonials}: TestimonialProps) {
                     src={element.user.image}
                     alt={element.user.name}
                     fill
-                    className="!static !h-14 !w-14 rounded-full bg-neutral-50 object-cover object-top"
+                    className="!static !h-14 !w-14 rounded-full bg-neutral-50 object-cover object-top grayscale"
                   />
                   <div className="flex flex-col">
                     <div className="text-base font-medium leading-none text-neutral-950">
                       {element.user.name}
                     </div>
-                    <div className="mt-2 text-sm leading-none text-neutral-500">
+                    <div className="mt-2 text-sm leading-none group-odd:text-yellow-800 group-even:text-red-800">
                       {element.user.title}
                     </div>
                   </div>
