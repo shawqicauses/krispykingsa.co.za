@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 1️⃣
+// DONE REVIEWING: GITHUB COMMIT 2️⃣
 import {Fragment} from "react"
 import {CTA, Header, Menu, Testimonial} from "../components"
 
@@ -38,12 +38,27 @@ const IndexPage = function IndexPage() {
     }
   ]
 
+  const testimonials = [
+    {
+      id: "id-01",
+      user: {name: "John Doe", title: "Food Critic, Tasty Magazine"},
+      body: "The food at Krispy King is absolutely delicious! I can't get enough of their mouth-watering dishes.",
+      rating: 5
+    },
+    {
+      id: "id-02",
+      user: {name: "Jane Smith", title: "Marketing Manager, Foodie Co."},
+      body: "The service at Krispy King is top-notch. The staff is friendly and attentive, making every visit a pleasure.",
+      rating: 4
+    }
+  ]
+
   return (
     <Fragment>
       <Header />
       <CTA />
       <Menu menu={menu} />
-      <Testimonial />
+      <Testimonial testimonials={testimonials} />
     </Fragment>
   )
 }
