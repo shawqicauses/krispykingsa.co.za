@@ -1,4 +1,5 @@
-// DONE REVIEWING: GITHUB COMMIT 4️⃣
+// DONE REVIEWING: GITHUB COMMIT 5️⃣
+import {EnvelopeIcon, MapPinIcon, PhoneIcon} from "@heroicons/react/24/outline"
 import {Fragment} from "react"
 import {CTA, Contact, Header, Menu, Testimonial} from "../components"
 
@@ -61,13 +62,43 @@ const IndexPage = function IndexPage() {
     }
   ]
 
+  const contacts = [
+    {
+      icon: <EnvelopeIcon />,
+      title: "Email",
+      description: "Send us an email",
+      link: {
+        content: "hello@krispykingsa.co.za",
+        href: "mailto:hello@krispykingsa.co.za"
+      }
+    },
+    {
+      icon: <PhoneIcon />,
+      title: "Phone",
+      description: "Give us a call",
+      link: {
+        content: "+1 (234) 567 8910",
+        href: "+12345678910"
+      }
+    },
+    {
+      icon: <MapPinIcon />,
+      title: "Location",
+      description: "123 Main Street, Cape Town",
+      link: {
+        content: "Get Directions",
+        href: "https://maps.google.com"
+      }
+    }
+  ]
+
   return (
     <Fragment>
       <Header />
       <Menu menu={menu} />
       <CTA />
       <Testimonial testimonials={testimonials} />
-      <Contact />
+      <Contact contacts={contacts} />
     </Fragment>
   )
 }
