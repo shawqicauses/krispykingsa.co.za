@@ -1,6 +1,6 @@
-// DONE REVIEWING: GITHUB COMMIT 3️⃣
+// DONE REVIEWING: GITHUB COMMIT 1️⃣
 import {Fragment} from "react"
-import {CTA, Header, Menu} from "../components"
+import {CTA, Header, Menu, Testimonial} from "../components"
 
 const IndexPage = function IndexPage() {
   const menu = [
@@ -43,6 +43,7 @@ const IndexPage = function IndexPage() {
       <Header />
       <CTA />
       <Menu menu={menu} />
+      <Testimonial />
     </Fragment>
   )
 }
