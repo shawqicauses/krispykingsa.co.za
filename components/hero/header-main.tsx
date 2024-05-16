@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 1️⃣
+// DONE REVIEWING: GITHUB COMMIT 3️⃣
 import Image from "next/image"
 import Link from "next/link"
 
@@ -58,7 +58,7 @@ const Header = function Header() {
           />
         </div>
         <div className="overflow-hidden">
-          <div className="mx-auto max-w-xl-7 px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+          <div className="mx-auto max-w-xl-7 px-6 py-24 sm:py-32 lg:px-8">
             <div className="mx-auto max-w-xl-2 gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-xl-2">
                 <h1 className="text-xl-4 font-bold leading-tight tracking-tight text-neutral-950 sm:text-xl-5 lg:text-xl-6">
