@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 5️⃣
+// DONE REVIEWING: GITHUB COMMIT 6️⃣
 import {EnvelopeIcon, MapPinIcon, PhoneIcon} from "@heroicons/react/24/outline"
 import {Fragment} from "react"
 import {CTA, Contact, Header, Menu, Testimonial} from "../components"
@@ -64,27 +64,27 @@ const IndexPage = function IndexPage() {
 
   const contacts = [
     {
-      icon: <EnvelopeIcon />,
+      icon: <EnvelopeIcon className="h-6 w-6 text-white" />,
       title: "Email",
-      description: "Send us an email",
+      description: "Feel free to send us a mail at your earliest convenience.",
       link: {
         content: "hello@krispykingsa.co.za",
         href: "mailto:hello@krispykingsa.co.za"
       }
     },
     {
-      icon: <PhoneIcon />,
+      icon: <PhoneIcon className="h-6 w-6 text-white" />,
       title: "Phone",
-      description: "Give us a call",
+      description: "Feel free to give us a call at your earliest convenience.",
       link: {
         content: "+1 (234) 567 8910",
         href: "+12345678910"
       }
     },
     {
-      icon: <MapPinIcon />,
+      icon: <MapPinIcon className="h-6 w-6 text-white" />,
       title: "Location",
-      description: "123 Main Street, Cape Town",
+      description: "27 Brain Road, College Road, Cape Town - Your Address Here",
       link: {
         content: "Get Directions",
         href: "https://maps.google.com"

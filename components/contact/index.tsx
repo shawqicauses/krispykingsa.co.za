@@ -1,5 +1,7 @@
-// DONE REVIEWING: GITHUB COMMIT 2️⃣
+// DONE REVIEWING: GITHUB COMMIT 3️⃣
 
+import {ChevronRightIcon} from "@heroicons/react/24/outline"
+import Link from "next/link"
 import {ReactNode} from "react"
 
 type ContactSingle = {
@@ -29,9 +31,32 @@ const Contact = function Contact({contacts}: ContactProps) {
             Please do not hesitate to contact us today!
           </p>
         </div>
-        <div className="mx-auto mt-20 max-w-lg space-y-16">
+        <div className="-mx-px mt-20 grid grid-cols-1 gap-4 sm:mx-0 sm:grid-cols-2 lg:grid-cols-3">
           {contacts.map((element) => (
-            <div>Contact Element</div>
+            <div className="group flex gap-x-6 rounded-lg border border-neutral-100 bg-neutral-50 p-4 sm:p-6">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-red-600">
+                {element.icon}
+              </div>
+              <div>
+                <h3 className="text-base font-semi-bold leading-none text-neutral-950 sm:text-lg">
+                  {element.title}
+                </h3>
+                <p className="mt-3 leading-normal text-neutral-500">
+                  {element.description}
+                </p>
+                <p className="mt-6">
+                  <Link
+                    href={element.link.href}
+                    className="flex items-center gap-3 text-sm font-semi-bold leading-none text-red-600">
+                    {element.link.content}
+                    <ChevronRightIcon
+                      strokeWidth={1.5}
+                      className="h-4 w-4 text-current"
+                    />
+                  </Link>
+                </p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
