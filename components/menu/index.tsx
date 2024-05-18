@@ -1,9 +1,12 @@
-// DINE REVIEWING: GITHUB COMMIT 3️⃣
+"use client"
+
+// DINE REVIEWING: GITHUB COMMIT 4️⃣
 
 import {StarIcon} from "@heroicons/react/24/solid"
+import {motion} from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import {classNames} from "../../helpers/lib"
+import {animations, classNames} from "../../helpers/lib"
 
 type MenuSingle = {
   id: string
@@ -24,10 +27,13 @@ const Menu = function Menu({menu}: MenuProps) {
       <div className="mx-auto max-w-xl-7 overflow-hidden sm:px-6 lg:px-8">
         <h2 className="sr-only">Menu</h2>
         <div className="-mx-px grid grid-cols-1 gap-4 xs:grid-cols-2 sm:mx-0 md:grid-cols-3 lg:grid-cols-4">
-          {menu.map((element) => (
-            <div
+          {menu.map((element, index) => (
+            <motion.div
               key={element.id}
-              className="group relative rounded-lg border p-4 transition-all duration-300 ease-in-out odd:border-yellow-100 odd:bg-yellow-50 even:border-red-100 even:bg-red-50 hover:border-transparent odd:hover:bg-yellow-500 even:hover:bg-red-600 sm:p-6">
+              variants={animations.element(index * 0.2)}
+              initial="hidden"
+              whileInView="visible"
+              className="group relative rounded-lg border p-4 odd:border-yellow-100 odd:bg-yellow-50 even:border-red-100 even:bg-red-50 hover:border-transparent hover:transition-all hover:duration-300 hover:ease-in-out odd:hover:bg-yellow-500 even:hover:bg-red-600 sm:p-6">
               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-neutral-100 transition-all duration-300 ease-in-out group-hover:opacity-75">
                 <Image
                   src={element.image}
@@ -67,7 +73,7 @@ const Menu = function Menu({menu}: MenuProps) {
                   ${element.price}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

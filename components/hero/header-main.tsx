@@ -1,6 +1,6 @@
 "use client"
 
-// DONE REVIEWING: GITHUB COMMIT 4️⃣
+// DONE REVIEWING: GITHUB COMMIT 5️⃣
 import {motion} from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
@@ -66,7 +66,7 @@ const Header = function Header() {
             <div className="mx-auto max-w-xl-2 gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-xl-2">
                 <motion.h1
-                  variants={animations.header.element(0)}
+                  variants={animations.element(0)}
                   initial="hidden"
                   whileInView="visible"
                   className="text-xl-4 font-bold leading-tight tracking-tight text-neutral-950 sm:text-xl-5 lg:text-xl-6">
@@ -78,7 +78,7 @@ const Header = function Header() {
                   <span className="text-red-600">.</span>
                 </motion.h1>
                 <motion.p
-                  variants={animations.header.element(0.2)}
+                  variants={animations.element(0.2)}
                   initial="hidden"
                   whileInView="visible"
                   className="mt-6 text-lg leading-8 text-neutral-600 sm:max-w-md lg:max-w-none">
@@ -92,7 +92,7 @@ const Header = function Header() {
                 </motion.p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <motion.div
-                    variants={animations.header.element(0.4)}
+                    variants={animations.element(0.4)}
                     initial="hidden"
                     whileInView="visible">
                     <Link
@@ -102,7 +102,7 @@ const Header = function Header() {
                     </Link>
                   </motion.div>
                   <motion.div
-                    variants={animations.header.element(0.6)}
+                    variants={animations.element(0.6)}
                     initial="hidden"
                     whileInView="visible">
                     <Link
@@ -116,7 +116,7 @@ const Header = function Header() {
               <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                 <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <motion.div
-                    variants={animations.header.element(0)}
+                    variants={animations.element(0)}
                     initial="hidden"
                     whileInView="visible"
                     className="relative">
@@ -131,7 +131,7 @@ const Header = function Header() {
                 </div>
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <motion.div
-                    variants={animations.header.element(0.2)}
+                    variants={animations.element(0.2)}
                     initial="hidden"
                     whileInView="visible"
                     className="relative">
@@ -144,7 +144,7 @@ const Header = function Header() {
                     <div className={classes.imageDiv} />
                   </motion.div>
                   <motion.div
-                    variants={animations.header.element(0.4)}
+                    variants={animations.element(0.4)}
                     initial="hidden"
                     whileInView="visible"
                     className="relative">
@@ -159,7 +159,7 @@ const Header = function Header() {
                 </div>
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <motion.div
-                    variants={animations.header.element(0.6)}
+                    variants={animations.element(0.6)}
                     initial="hidden"
                     whileInView="visible"
                     className="relative">
@@ -172,7 +172,7 @@ const Header = function Header() {
                     <div className={classes.imageDiv} />
                   </motion.div>
                   <motion.div
-                    variants={animations.header.element(0.8)}
+                    variants={animations.element(0.8)}
                     initial="hidden"
                     whileInView="visible"
                     className="relative">
