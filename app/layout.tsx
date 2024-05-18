@@ -1,7 +1,7 @@
-// DONE REVIEWING: GITHUB COMMIT 1️⃣
+// DONE REVIEWING: GITHUB COMMIT 2️⃣
 import {Poppins} from "next/font/google"
 import {ReactNode} from "react"
-import {Hero} from "../components"
+import {Footer, Hero} from "../components"
 import "../styles/globals.css"
 
 const poppins = Poppins({
@@ -19,7 +19,7 @@ const Layout = function Layout({children}: LayoutProps) {
       <body className={poppins.className}>
         <Hero />
         {children}
-        <footer>Footer</footer>
+        <Footer />
       </body>
     </html>
   )
