@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 3️⃣
+// DONE REVIEWING: GITHUB COMMIT 4️⃣
 
 import {ChevronRightIcon} from "@heroicons/react/24/outline"
 import Link from "next/link"
@@ -41,13 +41,14 @@ const Contact = function Contact({contacts}: ContactProps) {
                 <h3 className="text-base font-semi-bold leading-none text-neutral-950 sm:text-lg">
                   {element.title}
                 </h3>
-                <p className="mt-3 leading-normal text-neutral-500">
+                <p className="mt-3 text-sm leading-normal text-neutral-500">
                   {element.description}
                 </p>
                 <p className="mt-6">
                   <Link
                     href={element.link.href}
-                    className="flex items-center gap-3 text-sm font-semi-bold leading-none text-red-600">
+                    className="flex items-center gap-3 text-sm font-semi-bold leading-none text-red-600"
+                    style={{wordBreak: "break-word"}}>
                     {element.link.content}
                     <ChevronRightIcon
                       strokeWidth={1.5}

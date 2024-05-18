@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 2️⃣
+// DONE REVIEWING: GITHUB COMMIT 3️⃣
 /** @type {import('tailwindcss').Config} */
 const f = require("@tailwindcss/forms")
 const lc = require("@tailwindcss/line-clamp")
@@ -89,7 +89,12 @@ module.exports = {
       "xl-2": "0 1.25rem 3.125rem -0.75rem rgb(0 0 0 / 0.25)"
     },
     dropShadow: {},
-    columns: {},
+    columns: {
+      1: 1,
+      2: 2,
+      3: 3,
+      4: 4
+    },
     blur: {
       "xl-3": "4rem"
     }
