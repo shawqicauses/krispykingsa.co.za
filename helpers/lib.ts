@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 2️⃣
+// DONE REVIEWING: GITHUB COMMIT 3️⃣
 export const classNames = function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ")
 }
@@ -48,5 +48,17 @@ export const animations = {
         }
       }
     }
+  },
+  header: {
+    element: (delay: number) => ({
+      hidden: fadeUpVariant.from,
+      visible: {
+        ...fadeUpVariant.to,
+        transition: {
+          ...transition,
+          delay
+        }
+      }
+    })
   }
 }
