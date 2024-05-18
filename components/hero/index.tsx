@@ -1,11 +1,13 @@
-// DONE REVIEWING: GITHUB COMMIT 5️⃣
+// DONE REVIEWING: GITHUB COMMIT 6️⃣
 
 "use client"
 
 import {Dialog, DialogPanel} from "@headlessui/react"
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline"
+import {motion} from "framer-motion"
 import Link from "next/link"
 import {useState} from "react"
+import {animations} from "../../helpers/lib"
 
 const navigation = [
   {name: "Sauces", href: "/sauces"},
@@ -18,7 +20,7 @@ const Logo = function Logo() {
   return (
     <Link
       href="/"
-      className="text-neutral-950 -m-1.5 p-1.5 text-base font-semi-bold uppercase leading-none tracking-widest">
+      className="-m-1.5 p-1.5 text-base font-semi-bold uppercase leading-none tracking-widest text-neutral-950">
       <span className="text-red-600">Krispy</span> King.
     </Link>
   )
@@ -38,36 +40,47 @@ const Hero = function Hero() {
       <nav
         aria-label="Global"
         className="mx-auto flex max-w-xl-7 items-center justify-between p-6 lg:px-8">
-        <div className="flex lg:flex-1">
+        <motion.div
+          variants={animations.navigation.logo}
+          initial="hidden"
+          whileInView="visible"
+          className="flex lg:flex-1">
           <Logo />
-        </div>
+        </motion.div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="text-neutral-950 -m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-950"
             onClick={() => setMobileMenuOpen(true)}>
             <span className="sr-only">Open Main Menu</span>
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((element) => (
-            <Link
+          {navigation.map((element, index) => (
+            <motion.div
               key={element.href}
-              href={element.href}
-              className={classes.link.lg}>
-              {element.name}
-            </Link>
+              variants={animations.navigation.link(index * 0.2)}
+              initial="hidden"
+              whileInView="visible">
+              <Link href={element.href} className={classes.link.lg}>
+                {element.name}
+              </Link>
+            </motion.div>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <motion.div
+          variants={animations.navigation.button}
+          initial="hidden"
+          whileInView="visible"
+          className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link href="/order-now" className={classes.link.lg}>
             Order Now
             <span aria-hidden="true" className="ml-2">
               &rarr;
             </span>
           </Link>
-        </div>
+        </motion.div>
       </nav>
       <Dialog
         open={mobileMenuOpen}
@@ -79,7 +92,7 @@ const Hero = function Hero() {
             <Logo />
             <button
               type="button"
-              className="text-neutral-950 -m-2.5 rounded-md p-2.5"
+              className="-m-2.5 rounded-md p-2.5 text-neutral-950"
               onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Close Main Menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
