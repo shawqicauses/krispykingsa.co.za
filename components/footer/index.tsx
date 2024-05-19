@@ -42,9 +42,9 @@ const Footer = function Footer() {
       <div className="mx-auto max-w-xl-7 overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav
           aria-label="Footer"
-          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
+          className="flex flex-wrap justify-center gap-4 sm:gap-8">
           {navigation.main.map((element) => (
-            <div key={element.name} className="pb-6">
+            <div key={element.name}>
               <Link
                 href={element.href}
                 className="text-sm font-medium leading-6 text-neutral-950 transition-all duration-300 ease-in-out hover:text-red-600">
