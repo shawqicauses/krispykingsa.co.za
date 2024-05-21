@@ -1,7 +1,6 @@
-// DONE REVIEWING: GITHUB COMMIT 3️⃣
+// DONE REVIEWING: GITHUB COMMIT 4️⃣
 /** @type {import('tailwindcss').Config} */
 const f = require("@tailwindcss/forms")
-const lc = require("@tailwindcss/line-clamp")
 const ar = require("@tailwindcss/aspect-ratio")
 
 module.exports = {
@@ -99,5 +98,5 @@ module.exports = {
       "xl-3": "4rem"
     }
   },
-  plugins: [f, lc, ar]
+  plugins: [f, ar]
 }
