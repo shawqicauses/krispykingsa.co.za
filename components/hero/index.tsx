@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 6️⃣
+// DONE REVIEWING: GITHUB COMMIT 7️⃣
 
 "use client"
 
@@ -98,7 +98,7 @@ const Hero = function Hero() {
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="flw-root mt-6">
+          <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-neutral-100">
               <div className="space-y-2 py-6">
                 {navigation.map((element) => (
