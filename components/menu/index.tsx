@@ -1,6 +1,6 @@
 "use client"
 
-// DINE REVIEWING: GITHUB COMMIT 4️⃣
+// DINE REVIEWING: GITHUB COMMIT 5️⃣
 
 import {StarIcon} from "@heroicons/react/24/solid"
 import {motion} from "framer-motion"
@@ -24,7 +24,7 @@ type MenuProps = {
 const Menu = function Menu({menu}: MenuProps) {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-xl-7 overflow-hidden sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-xl-7 overflow-hidden px-6 lg:px-8">
         <h2 className="sr-only">Menu</h2>
         <div className="-mx-px grid grid-cols-1 gap-4 xs:grid-cols-2 sm:mx-0 md:grid-cols-3 lg:grid-cols-4">
           {menu.map((element, index) => (
