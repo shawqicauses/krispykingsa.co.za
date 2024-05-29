@@ -1,13 +1,13 @@
-// DONE REVIEWING: GITHUB COMMIT 5️⃣
+// DONE REVIEWING: GITHUB COMMIT 6️⃣
 import Image from "next/image"
 import Link from "next/link"
 
 const CTA = function CTA() {
   const id = "cta-background-pattern"
   return (
-    <div className="bg-white">
+    <div className="bg-neutral-950">
       <div className="mx-auto max-w-xl-7 py-24 sm:py-32 lg:px-8">
-        <div className="relative isolate overflow-hidden bg-neutral-950 px-6 pt-16 shadow-xl-2 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:rounded-xl-3 lg:px-24 lg:pt-0">
+        <div className="relative isolate overflow-hidden border border-neutral-900 bg-neutral-900/25 px-6 pt-16 shadow-xl-2 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:rounded-xl-3 lg:px-24 lg:pt-0">
           <svg
             viewBox="0 0 1024 1024"
             aria-hidden="true"
