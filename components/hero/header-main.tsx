@@ -1,6 +1,6 @@
 "use client"
 
-// DONE REVIEWING: GITHUB COMMIT 5️⃣
+// DONE REVIEWING: GITHUB COMMIT 6️⃣
 import {motion} from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
@@ -10,9 +10,9 @@ const Header = function Header() {
   const id = "header-background-pattern"
   const classes = {
     image:
-      "!static bg-neutral-950/5 aspect-[2/3] w-full rounded-xl object-cover shadow-lg",
+      "!static bg-white/5 aspect-[2/3] w-full rounded-xl object-cover shadow-lg",
     imageDiv:
-      "pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-neutral-50"
+      "pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-neutral-800"
   }
 
   return (
@@ -21,7 +21,7 @@ const Header = function Header() {
         {/* Built Using Tailwind CSS UI ✨ */}
         <svg
           aria-hidden="true"
-          className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-neutral-200"
+          className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-neutral-800"
           style={{
             maskImage:
               "radial-gradient(32rem 32rem at center, white, transparent)"
@@ -37,7 +37,7 @@ const Header = function Header() {
               <path fill="none" d="M.5 200V.5H200" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-neutral-50">
+          <svg x="50%" y={-1} className="overflow-visible fill-neutral-900">
             <path
               strokeWidth={0}
               d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
@@ -54,7 +54,7 @@ const Header = function Header() {
           aria-hidden="true"
           className="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-xl-3 lg:ml-24 xl:ml-48">
           <div
-            className="aspect-[800/1036] w-[50rem] bg-gradient-to-tr from-red-200 to-yellow-200 opacity-30"
+            className="aspect-[800/1036] w-[50rem] bg-gradient-to-tr from-red-500 to-yellow-500 opacity-30"
             style={{
               clipPath:
                 "polygon(63% 29%, 100% 17%, 76% 3%, 48% 0%, 44% 4%, 54% 25%, 59% 49%, 55% 57%, 44% 57%, 27% 47%, 35% 81%, 0% 97%, 39% 100%, 35% 81%, 97% 52%, 63% 29%)"
@@ -69,7 +69,7 @@ const Header = function Header() {
                   variants={animations.element(0)}
                   initial="hidden"
                   whileInView="visible"
-                  className="text-xl-4 font-bold leading-tight tracking-tight text-neutral-950 sm:text-xl-5 lg:text-xl-6">
+                  className="text-xl-4 font-bold leading-tight tracking-tight text-white sm:text-xl-5 lg:text-xl-6">
                   Delicious Food &{" "}
                   <span className="underline decoration-4 underline-offset-2">
                     Memorable
@@ -81,9 +81,9 @@ const Header = function Header() {
                   variants={animations.element(0.2)}
                   initial="hidden"
                   whileInView="visible"
-                  className="mt-6 text-lg leading-8 text-neutral-600 sm:max-w-md lg:max-w-none">
+                  className="mt-6 text-lg leading-8 text-neutral-400 sm:max-w-md lg:max-w-none">
                   Indulge in our mouth-watering dishes and savor the flavors of{" "}
-                  <span className="font-semi-bold italic text-neutral-950">
+                  <span className="font-semi-bold italic text-white">
                     Krispy King
                   </span>
                   . Whether you are craving our famous fried chicken or our
@@ -107,7 +107,7 @@ const Header = function Header() {
                     whileInView="visible">
                     <Link
                       href="/order-now"
-                      className="text-sm font-medium leading-6 text-neutral-950">
+                      className="text-sm font-medium leading-6 text-white">
                       Order Now <span aria-hidden="true">→</span>
                     </Link>
                   </motion.div>

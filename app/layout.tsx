@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 4️⃣
+// DONE REVIEWING: GITHUB COMMIT 5️⃣
 import {Poppins} from "next/font/google"
 import {ReactNode} from "react"
 import {Footer, Hero} from "../components"
@@ -16,7 +16,7 @@ type LayoutProps = {
 const Layout = function Layout({children}: LayoutProps) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={`${poppins.className} bg-neutral-950`}>
         <Hero />
         {children}
         <Footer />

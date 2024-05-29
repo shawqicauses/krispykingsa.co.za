@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 7️⃣
+// DONE REVIEWING: GITHUB COMMIT 8️⃣
 
 "use client"
 
@@ -20,7 +20,7 @@ const Logo = function Logo() {
   return (
     <Link
       href="/"
-      className="-m-1.5 p-1.5 text-base font-semi-bold uppercase leading-none tracking-widest text-neutral-950">
+      className="-m-1.5 p-1.5 text-base font-semi-bold uppercase leading-none tracking-widest text-white">
       <span className="text-red-600">Krispy</span> King.
     </Link>
   )
@@ -30,8 +30,8 @@ const Hero = function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const classes = {
     link: {
-      base: "text-neutral-950 -mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 transition-all duration-300 ease-in-out hover:bg-neutral-50",
-      lg: "text-neutral-950 text-sm font-medium leading-none transition-all duration-300 ease-in-out hover:text-red-600"
+      base: "text-white -mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 transition-all duration-300 ease-in-out hover:bg-neutral-50",
+      lg: "text-white text-sm font-medium leading-none transition-all duration-300 ease-in-out hover:text-red-600"
     }
   }
 
@@ -50,7 +50,7 @@ const Hero = function Hero() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-950"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
             onClick={() => setMobileMenuOpen(true)}>
             <span className="sr-only">Open Main Menu</span>
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
@@ -92,7 +92,7 @@ const Hero = function Hero() {
             <Logo />
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-neutral-950"
+              className="-m-2.5 rounded-md p-2.5 text-white"
               onClick={() => setMobileMenuOpen(false)}>
               <span className="sr-only">Close Main Menu</span>
               <XMarkIcon className="h-6 w-6" aria-hidden="true" />
