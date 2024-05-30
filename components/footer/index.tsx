@@ -1,4 +1,4 @@
-// DONE REVIEWING: GITHUB COMMIT 2️⃣
+// DONE REVIEWING: GITHUB COMMIT 3️⃣
 
 import Link from "next/link"
 import {BsFacebook, BsInstagram, BsTwitter} from "react-icons/bs"
@@ -38,7 +38,7 @@ const navigation = {
 
 const Footer = function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-neutral-900/25">
       <div className="mx-auto max-w-xl-7 overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav
           aria-label="Footer"
@@ -47,7 +47,7 @@ const Footer = function Footer() {
             <div key={element.name}>
               <Link
                 href={element.href}
-                className="text-sm font-medium leading-6 text-neutral-950 transition-all duration-300 ease-in-out hover:text-red-600">
+                className="text-sm font-medium leading-6 text-white transition-all duration-300 ease-in-out hover:text-red-600">
                 {element.name}
               </Link>
             </div>
@@ -59,17 +59,17 @@ const Footer = function Footer() {
               <Link
                 key={element.name}
                 href={element.href}
-                className="text-neutral-950 transition-all duration-300 ease-in-out hover:text-red-600">
+                className="text-white transition-all duration-300 ease-in-out hover:text-red-600">
                 <span className="sr-only">{element.name}</span>
                 <element.icon className="h-5 w-5" />
               </Link>
             )
           })}
         </div>
-        <p className="mt-10 text-center text-sm leading-5 text-neutral-500">
+        <p className="mt-10 text-center text-sm leading-5 text-neutral-400">
           &copy; 2024{" "}
-          <span className="font-medium text-neutral-950">Krispy King</span>,
-          Inc. Rights Reserved.
+          <span className="font-medium text-white">Krispy King</span>, Inc.
+          Rights Reserved.
         </p>
       </div>
     </footer>
