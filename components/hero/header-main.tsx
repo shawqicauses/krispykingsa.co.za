@@ -1,6 +1,6 @@
 "use client"
 
-// DONE REVIEWING: GITHUB COMMIT 6️⃣
+// DONE REVIEWING: GITHUB COMMIT 7️⃣
 import {motion} from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
@@ -71,7 +71,7 @@ const Header = function Header() {
                   whileInView="visible"
                   className="text-xl-4 font-bold leading-tight tracking-tight text-white sm:text-xl-5 lg:text-xl-6">
                   Delicious Food &{" "}
-                  <span className="underline decoration-4 underline-offset-2">
+                  <span className="underline decoration-neutral-800 decoration-4 underline-offset-2">
                     Memorable
                   </span>{" "}
                   Dining Experience
